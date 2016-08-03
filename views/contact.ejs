@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <title>Course Catalog</title>
+  <title>Contact Us :: Devilicious Academy</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../css/materialize.min.css" title="materialize" charset="utf-8">
   <link rel="stylesheet" href="../css/main.css" title="main" charset="utf-8">
@@ -26,29 +26,29 @@
 
 <h3 class="center-align">Contact Us</h3>
 <div class="row">
-  <form class="col s12 m8 l6 offset-m2 offset-l3">
+  <form action="/contact" method="POST" class="col s12 m8 l6 offset-m2 offset-l3">
     <div class="row">
       <div class="input-field col s12 m6">
         <i class="material-icons prefix">account_circle</i>
-        <input id="first_name" type="text" class="validate">
+        <input name="first_name" id="first_name" type="text" class="validate">
         <label for="first_name">First Name</label>
       </div>
       <div class="input-field col s12 m6">
-        <input id="last_name" type="text" class="validate">
+        <input name="last_name" id="last_name" type="text" class="validate">
         <label for="last_name">Last Name</label>
       </div>
     </div>
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
-        <input id="email" type="email" class="validate">
+        <input name="email" id="email" type="email" class="validate">
         <label for="email">Email</label>
       </div>
     </div>
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">comment</i>
-        <textarea id="message" class="materialize-textarea"></textarea>
+        <textarea name="message" id="message" class="materialize-textarea"></textarea>
         <label for="message">Message</label>
       </div>
     </div>
