@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Devilicious Academy</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css" title="materialize" charset="utf-8">
+    <link rel="stylesheet" href="css/main.css" title="main" charset="utf-8">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a style="padding-left: 10px" href="/" id="brand" class="brand-logo"><i class="material-icons">restaurant</i>Dev<span class="thin">ilicious</span> Academy</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/courses">Courses</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="/">Home</a></li>
+          <li><a href="/courses">Courses</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container center">
+      <i style="color: #424242; font-size: 350px" class="material-icons hide-on-small-only">school</i>
+      <i style="color: #424242; font-size: 200px" class="material-icons hide-on-med-and-up">school</i>
+      <h3 style="color: #424242">Welcome to Devilicious Academy!</h3>
+      <a href="/courses"><button class="btn cyan darken-1">Check out our courses!</button></a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>$(".button-collapse").sideNav();</script>
+  </body>
+</html>

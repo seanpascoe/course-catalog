@@ -1,0 +1,34 @@
+[
+  {
+    "id":"js",
+    "name":"Javascript",
+    "cost": 9000.00,
+    "coure_length": "8 months",
+    "course_instructor": "Joe Mama",
+    "description":"This is the only course you need. All your life's dreams will come true when you take the Javscript course. I think I saw Jesus taking this course."
+  },
+  {
+    "id":"ror",
+    "name":"Ruby on Rails",
+    "cost": 8000.00,
+    "coure_length": "7 months",
+    "course_instructor": "Joe Cool",
+    "description":"This is a really good course. There are many like this course, but this one is ours. So many cool kids take this course."
+  },
+  {
+    "id":"php",
+    "name":"PHP",
+    "cost": 6000.00,
+    "coure_length": "5 months",
+    "course_instructor": "Noob Joe",
+    "description":"This is a good intro course. Most of the web is written in PHP. If you want international contract work you should take this course."
+  },
+  {
+    "id":"java",
+    "name":"Java",
+    "cost": 10000.00,
+    "coure_length": "10 months",
+    "course_instructor": "Old Joe",
+    "description":"This is a course for old people. It's not javscript. It's pretty neat if you like old, nostalgic stuff."
+  }
+]

@@ -1,0 +1,58 @@
+<head>
+  <meta charset="utf-8">
+  <title>Course Catalog</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.min.css" title="materialize" charset="utf-8">
+  <link rel="stylesheet" href="css/main.css" title="main" charset="utf-8">
+</head>
+
+<nav>
+  <div class="nav-wrapper">
+    <a style="padding-left: 10px" href="/" id="brand" class="brand-logo"><i class="material-icons">restaurant</i>Dev<span class="thin">ilicious</span> Academy</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="/courses">Courses</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="/">Home</a></li>
+      <li><a href="/courses">Courses</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <h1 class="center">Courses</h1>
+  <table>
+    <colgroup>
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 10%;">
+       <col span="1" style="width: 60%;">
+    </colgroup>
+    <thead>
+      <th>Name</th>
+      <th>Duration</th>
+      <th>Cost</th>
+      <th>Description</th>
+    </thead>
+    <tbody>
+    <% courses.forEach(function(course) { %>
+      <tr>
+        <td><a href="<%= '/courses/' + course.id %>"><%= course.name %></a></td>
+        <td> <%= course.coure_length %> </td>
+        <td>$<%= course.cost %> </td>
+        <td> <%= course.description %> </td>
+      </tr>
+    <% }); %>
+    </tbody>
+  </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<script src="js/main.js"></script>
+<script>$(".button-collapse").sideNav();</script>
